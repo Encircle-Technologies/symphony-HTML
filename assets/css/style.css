@@ -527,6 +527,12 @@ body::-webkit-scrollbar-thumb,
   /* Breadcrumb End */
 
   /* zigzag content */
+  .zigzag-content-with-image .portrait {
+    @apply relative overflow-hidden block w-full rounded-[40px] drop-shadow-menu pt-[100%]
+  }
+  .zigzag-content-with-image .portrait img {
+    @apply absolute top-0 left-0;
+  }
   /* zigzag content */
   
 }
