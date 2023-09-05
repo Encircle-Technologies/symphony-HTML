@@ -26,6 +26,7 @@ module.exports = {
             LightBlue: '#E7F4FA',
             DarkBlue: '#004E7C',
             Storke: '#E6E6E6',
+            Gray: '#A6A8A9',
         },
         flex: {
             '1': '1 1 0%',
@@ -191,6 +192,7 @@ module.exports = {
         letterSpacing: {            
             '2.24': '2.24px',          
             '1.28': '1.28px',
+            '0.96': '0.96px',
             '0.64': '0.64px',
             '0.8': '0.8px',
         },        
@@ -254,8 +256,10 @@ module.exports = {
             'patterns_one': 'linear-gradient(180deg, rgba(231,244,250,1) 25%, rgba(0,78,124,1) 75%)',
             'patterns_two': 'linear-gradient(360deg, rgba(0,113,237,1) 25%, rgba(0,78,124,1) 75%)',
             'patterns_three': 'linear-gradient(360deg, rgba(0,78,124,1) 25%, rgba(255,255,255,1) 75%)',
-            'patterns_four': 'linear-gradient(180deg, rgba(0,78,124,1) 25%, rgba(255,255,255,1) 75%)',
+            'patterns_four': 'linear-gradient(180deg, #FFF 33.85%, #E7F4FA 64.58%)',
+
             'radial': 'radial-gradient(circle, rgba(255,255,255,0) 20%, rgba(255,255,255,0.1) 100%)',
+            'radial_two': 'radial-gradient(circle, rgba(255,255,255,0) 20%, rgba(255,255,255,1) 75%)',
             'divider-line': 'linear-gradient(90deg, rgba(166,168,169,1) 0%, rgba(166,168,169,0) 100%)',
         }),
         backgroundPosition: {

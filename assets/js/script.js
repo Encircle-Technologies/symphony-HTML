@@ -104,6 +104,46 @@ $(document).ready(function ($) {
         });
     }
 
+    if ($('.testimonial-wrapper').length) {
+        var testimonialSlide = new Swiper(".testimonials-swipe", {
+            loop: true,
+            slidesPerView: 2.1,
+            spaceBetween: 55,
+            centeredSlides: true,
+            speed: 2000,
+            autoplay: {
+                delay: 2500,
+                disableOnInteraction: false,
+            },
+            navigation: {
+              nextEl: ".swiper-button-next",
+              prevEl: ".swiper-button-prev",
+            },
+            breakpoints: {
+                320: {
+                    slidesPerView: 1.2,
+                    spaceBetween: 20,
+                },
+                640: {
+                  slidesPerView: 1.5,
+                  spaceBetween: 20,
+                },
+                768: {
+                  slidesPerView: 1.5,
+                  spaceBetween: 40,
+                },
+                1024: {
+                    slidesPerView: 1.8,
+                    spaceBetween: 55,
+                },
+                1200: {
+                  slidesPerView: 2.1,
+                  spaceBetween: 55,
+                },
+            },
+        });
+    }
+
     // Load More
     if ($(".bloglist-wrapper").length) {
         $(document).ready(function () {

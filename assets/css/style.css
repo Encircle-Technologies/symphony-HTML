@@ -144,6 +144,13 @@ body::-webkit-scrollbar-thumb,
     @apply bg-BrightTurquoise text-BoldBlue;
   }
 
+  .btn-Gray {
+    @apply bg-Gray text-White px-28 pt-10 pb-14 relative overflow-hidden capitalize duration-300 delay-150 ease-linear z-1;
+  }
+  .btn-Gray:hover {
+    @apply bg-BrightTurquoise text-BoldBlue;
+  }
+
   .regular__transition {
     @apply transition-all duration-500 ease-in-out;
   }
@@ -200,13 +207,22 @@ body::-webkit-scrollbar-thumb,
     @apply text-BoldBlue text-24 lg:text-32 leading-[120%] capitalize font-300 tracking-1.28;
   }
 
+  .title-Boldblue h1,
+  .title-Boldblue h2,
+  .title-Boldblue h3,
+  .title-Boldblue h4,
+  .title-Boldblue h5,
+  .title-Boldblue h6 {
+    @apply text-BoldBlue;
+  }
+
   .title-DarkBlue h1,
   .title-DarkBlue h2,
   .title-DarkBlue h3,
   .title-DarkBlue h4,
   .title-DarkBlue h5,
   .title-DarkBlue h6 {
-    @apply text-DarkBlue;
+    @apply text-DarkBlue tracking-0.96;
   }
 
   .white p,
@@ -369,7 +385,8 @@ body::-webkit-scrollbar-thumb,
   }
   
   .navbar ul > li > ul.sub-menu li a:hover,
-  .navbar ul > li > ul.sub-menu li.menuitem-active a {
+  .navbar ul > li > ul.sub-menu li.menuitem-active a,
+  .navbar ul > li > ul.sub-menu li.current-menu-item a {
     @apply text-BoldBlue;
   }
   .search-bar.active {
@@ -503,17 +520,35 @@ body::-webkit-scrollbar-thumb,
     .testimonial-swipe .swiper-slide-active .card {
       @apply border-BrightTurquoise bg-radial drop-shadow-menu;
     }
-    .test-btn-prev {
-      @apply relative top-0 left-0 m-0;
-    }
+    
     .test-btn-prev:before,
     .test-btn-prev:after,
     .test-btn-next:before,
     .test-btn-next:after {
       @apply hidden;
     }
+    .test-btn-prev {
+      @apply relative top-0 left-0 m-0 h-auto;
+    }
     .test-btn-next {
-      @apply relative top-0 right-0 m-0;
+      @apply relative top-0 right-0 m-0 h-auto;
+    }
+
+    .testimonials-swipe .card {
+      @apply rounded-10 border-2 border-solid border-Storke duration-500 delay-200 ease-linear;
+    }
+    .testimonials-swipe .card .img,
+    .testimonials-swipe .card .title, 
+    .testimonials-swipe .card .content {
+      @apply grayscale opacity-50;
+    }
+    .testimonials-swipe .swiper-slide-active .card .img,
+    .testimonials-swipe .swiper-slide-active .card .title,
+    .testimonials-swipe .swiper-slide-active .card .content {
+      @apply grayscale-0 opacity-100;
+    }
+    .testimonials-swipe .swiper-slide-active .card {
+      @apply border-BrightTurquoise bg-LightBlue bg-radial_two drop-shadow-menu;
     }
   /* Testimonial End */
 
@@ -521,8 +556,20 @@ body::-webkit-scrollbar-thumb,
   .breadcrumb-wrapper {
     @apply flex flex-col items-center justify-center w-full m-0 p-0 relative;
   }
-  .whoweare .breadcrumb-wrapper .img {
-    @apply lg:translate-x-[-180px] xlscreen:translate-x-[-90px] mdscreen2:translate-x-[-30px]
+  .breadcrumb-wrapper .img img {
+    @apply max-w-full md:max-w-[580px] md:max-h-[420px] lg:max-w-full xl:max-w-full h-auto block mx-auto;
+  }
+  .whoweare .breadcrumb-wrapper .img img {
+    @apply lg:translate-x-[-167px] lg:translate-y-[28px] xlscreen:translate-x-[-134px] xlscreen:translate-y-[70px] lgscreen:translate-x-[0] lgscreen:translate-y-[0px] ml-0 lgscreen:mx-auto;
+  }
+  .ourvalue .breadcrumb-wrapper .img img {
+    @apply translate-y-[14px]
+  }
+  .testimonials .breadcrumb-wrapper .img img {
+    @apply lg:translate-x-[-100px] xlscreen:translate-x-[-80px] mdscreen2:translate-x-[-20px]
+  }
+  .testimonials .breadcrumb-wrapper .img img {
+    @apply ml-0 lg:translate-y-[90px];
   }
   /* Breadcrumb End */
 
@@ -534,6 +581,34 @@ body::-webkit-scrollbar-thumb,
     @apply absolute top-0 left-0;
   }
   /* zigzag content */
+
+  /* Team Srart */
+  .team-wrapper .card-list .card .landscape {
+    @apply relative overflow-hidden w-full block pt-[75.24%] rounded-[8px] drop-shadow-menu;
+  }
+  .team-wrapper .card-list .card .landscape img {
+    @apply absolute inset-0;
+  }
+  .team-wrapper .card .portrait {
+    @apply relative overflow-hidden w-full block pt-[110.82%] rounded-[40px] drop-shadow-menu 
+  }
+  .team-wrapper .card .portrait img {
+    @apply absolute inset-0;
+  }
+
+  .team-wrapper-details .card-list .card .landscape {
+    @apply relative overflow-hidden w-full block pt-[75.24%] rounded-[8px] drop-shadow-menu;
+  }
+  .team-wrapper-details .card-list .card .landscape img {
+    @apply absolute inset-0;
+  }
+  .team-wrapper-details .portrait {
+    @apply relative overflow-hidden w-full xsscreen2:max-w-full max-w-[400px] block xsscreen2:pt-[100%] pt-[400px] rounded-[40px] drop-shadow-menu 
+  }
+  .team-wrapper-details .portrait img {
+    @apply absolute inset-0;
+  }
+  /* Team End */
   
 }
 
