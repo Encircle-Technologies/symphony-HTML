@@ -279,7 +279,7 @@
         <div class="bg-banner_gradient rounded-[0px] rounded-br-[100px] w-full h-auto lg:h-[573px] pt-[230px] md:pt-[197px] xl:pt-[190px]">
             <div class="container-fluid h-full">
                 <div class="flex flex-wrap items-end lg:items-center justify-center m-0 lgscreen:-mb-30 p-0 w-full h-full relative gap-x-7 xl:gap-x-[60px] gap-y-10">
-                    <div class="img left-0 lgscreen:w-full lg:w-6/12 xxl:w-auto xl:flex-auto lg:order-1 order-2 z-1">
+                    <div class="img left-0 lgscreen:w-full lg:w-6/12 xxl:w-auto xl:flex-[50%] lg:order-1 order-2 z-1">
                         <img src="../assets/images/testimonials-banner.svg" alt="Testimonials">
                     </div>
                     <div class="w-full lg:w-5/12 lg:order-2 order-1">
@@ -441,7 +441,7 @@
     </section>
     <!-- Testimonial End -->
 
-    <section class="inquiry-form">
+    <section class="inquiry-form-wrapper">
         <div class="bg-LightBlue relative py-55 lg:py-100 rounded-tl-[100px]">
             <div class="container-fluid">
                 <div class="flex flex-wrap items-center justify-center w-full m-0 p-0">
@@ -459,6 +459,39 @@
                                 If you’d like to leave comments about your experience with Symphony Wireless, we encourage you to do so below! We’d love to hear about your involvement with <a href="javascript:void(0);">our company</a>, how your asset acquisition was handled, and your overall impressions about our business. Please leave your honest feedback–we value you taking the time to let us know your thoughts!
                             </p>
                         </div>
+                    </div>
+                    <div class="w-full lg:w-8/12 mx-auto">
+                        <form action="#" class="inquiry-form mt-55">
+                            <div class="flex flex-wrap items-center justify-center w-full relative m-0 p-0 gap-7">
+                                <div class="w-full lg:flex-1">
+                                    <div class="input-block">
+                                        <input type="text" placeholder="First Name" class="form-control">
+                                    </div>                                        
+                                </div>
+                                <div class="w-full lg:flex-1">
+                                    <div class="input-block">
+                                        <input type="text" placeholder="Last Name" class="form-control">
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="input-block">
+                                        <select id="subject" name="" class="form-control">
+                                            <option value="Subject Line" selected>Subject Line</option>
+                                            <option value="lorem">Lorem Ipsum</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="w-full">
+                                    <div class="input-block textarea">
+                                        <textarea rows="6" type="text" placeholder="Feedback" class="form-control"></textarea>
+                                    </div>
+                                </div>
+                                <div class="w-full text-center">
+                                    <button class="btn btn-BoldBlue cursor-pointer">Submit</button>
+                                </div>
+                            </div>
+                            
+                        </form>
                     </div>
                 </div>
             </div>
@@ -493,7 +526,7 @@
                         </li>
                     </ul>
                 </div>
-                <div class="lgscreen:w-full lg:flex-2 order-3 lg:order-2">
+                <div class="lgscreen:w-full lg:flex-auto order-3 lg:order-2">
                     <div class="flex lgscreen:flex-col w-full items-center justify-center gap-[14px]">
                         <div class="copyright white">
                             <p>

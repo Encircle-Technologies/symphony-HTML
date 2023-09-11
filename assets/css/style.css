@@ -140,31 +140,31 @@ body::-webkit-scrollbar-thumb,
     @apply text-center;
   }
 
-  ul li {
+  .content ul li {
     @apply relative pl-25;
   }
-  .white ul li {
+  .content.white ul li {
     @apply text-White;
   }
-  ul li:before {
+  .content ul li:before {
     content: "";
     @apply absolute top-[10px] left-0 w-[6px] h-[6px] bg-BoldBlue rounded-25;
   }
-  .white ul li:before {
+  .content.white ul li:before {
     content: "";
     @apply absolute top-[10px] left-0 w-[6px] h-[6px] bg-BrightTurquoise rounded-25;
   }
 
-  ol li {
+  .content ol li {
     @apply relative m-0 p-0 list-decimal list-inside;
   }
-  ol li p {
+  .content ol li p {
     @apply pl-10 !inline-block w-full max-w-[calc(100%_-_25px)] align-top -mt-3
   }
-  ol li::marker {
+  .content ol li::marker {
     @apply text-BoldBlue font-700 inline-block;
   }
-  .white ol li::marker {
+  .content.white ol li::marker {
     @apply text-BrightTurquoise font-700
   }
 }
@@ -595,14 +595,14 @@ body::-webkit-scrollbar-thumb,
   .breadcrumb-wrapper .img img {
     @apply max-w-full md:max-w-[580px] md:max-h-[420px] lg:max-w-full xl:max-w-full h-auto block mx-auto;
   }
-  .whoweare .breadcrumb-wrapper .img img {
+  .who-we-are .breadcrumb-wrapper .img img {
     @apply lg:translate-x-[-167px] lg:translate-y-[28px] xlscreen:translate-x-[-134px] xlscreen:translate-y-[70px] lgscreen:translate-x-[0] lgscreen:translate-y-[0px] ml-0 lgscreen:mx-auto;
   }
-  .ourvalue .breadcrumb-wrapper .img img {
-    @apply translate-y-[14px]
+  .our-values .breadcrumb-wrapper .img img {
+    @apply translate-y-[14px];
   }
   .testimonials .breadcrumb-wrapper .img img {
-    @apply lg:translate-x-[-100px] xlscreen:translate-x-[-80px] mdscreen2:translate-x-[-20px]
+    @apply lg:translate-x-[-100px] xlscreen:translate-x-[-80px] mdscreen2:translate-x-[-20px];
   }
   .testimonials .breadcrumb-wrapper .img img {
     @apply ml-0 lg:translate-y-[90px];
@@ -669,6 +669,17 @@ body::-webkit-scrollbar-thumb,
   }
   /* involved wrapper End */
 
+  /* inquiry form Start */
+  .inquiry-form .input-block {
+    @apply block relative m-0 p-0 w-full;
+  }
+  .inquiry-form .input-block .form-control {
+    @apply font-Barlow text-16 leading-24 font-400 text-Font tracking-0.64 m-0 pt-8 pb-[12px] px-28 bg-White border-1 border-solid border-BoldBlue rounded-10 block w-full placeholder:opacity-40;
+  }
+  .inquiry-form .input-block select.form-control {
+    @apply bg-[url(./../../images/select-arrow.svg)] bg-no-repeat bg-[right_28px_top_1.05rem] bg-[length:15px] appearance-none;
+  }
+  /* inquiry form End */
 
 }
 
