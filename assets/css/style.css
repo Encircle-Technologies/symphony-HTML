@@ -136,6 +136,9 @@ body::-webkit-scrollbar-thumb,
   .content.white p a {
     @apply text-BrightTurquoise;
   }
+  .content.txt-center p {
+    @apply text-center;
+  }
 
   ul li {
     @apply relative pl-25;
@@ -145,7 +148,7 @@ body::-webkit-scrollbar-thumb,
   }
   ul li:before {
     content: "";
-    @apply absolute top-[12px] left-0 w-[6px] h-[6px] bg-BoldBlue rounded-25;
+    @apply absolute top-[10px] left-0 w-[6px] h-[6px] bg-BoldBlue rounded-25;
   }
   .white ul li:before {
     content: "";
@@ -611,6 +614,12 @@ body::-webkit-scrollbar-thumb,
     @apply relative overflow-hidden block w-full rounded-[40px] drop-shadow-menu pt-[100%]
   }
   .zigzag-content-with-image .portrait img {
+    @apply absolute top-0 left-0;
+  }
+  .zigzag-content-with-image .landscape {
+    @apply relative overflow-hidden block w-full rounded-[40px] drop-shadow-menu pt-[80%]
+  }
+  .zigzag-content-with-image .landscape img {
     @apply absolute top-0 left-0;
   }
   /* zigzag content */
