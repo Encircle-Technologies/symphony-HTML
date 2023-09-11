@@ -650,6 +650,9 @@ body::-webkit-scrollbar-thumb,
   .team-wrapper-details .portrait img {
     @apply absolute inset-0;
   }
+  .team-wrapper .title h4 a {
+    @apply duration-300 delay-150 ease-linear hover:text-BrightTurquoise;
+  }
   /* Team End */
   
   /* column two wrapper Start */
