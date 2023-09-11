@@ -52,12 +52,14 @@ body::-webkit-scrollbar-thumb,
   a:hover {
     @apply transition-all duration-300 delay-150 ease-linear;
   }
-  ul {
+  ul, ol {
     @apply p-0 mt-0;
   }
-  ul li {
+  ul li,
+  ol li {
     @apply list-none;
   }
+  
   img {
     @apply block;
   }
@@ -130,6 +132,37 @@ body::-webkit-scrollbar-thumb,
   }
   .content p a {
     @apply hover:underline;
+  }
+  .content.white p a {
+    @apply text-BrightTurquoise;
+  }
+
+  ul li {
+    @apply relative pl-25;
+  }
+  .white ul li {
+    @apply text-White;
+  }
+  ul li:before {
+    content: "";
+    @apply absolute top-[12px] left-0 w-[6px] h-[6px] bg-BoldBlue rounded-25;
+  }
+  .white ul li:before {
+    content: "";
+    @apply absolute top-[10px] left-0 w-[6px] h-[6px] bg-BrightTurquoise rounded-25;
+  }
+
+  ol li {
+    @apply relative m-0 p-0 list-decimal list-inside;
+  }
+  ol li p {
+    @apply pl-10 !inline-block w-full max-w-[calc(100%_-_25px)] align-top -mt-3
+  }
+  ol li::marker {
+    @apply text-BoldBlue font-700 inline-block;
+  }
+  .white ol li::marker {
+    @apply text-BrightTurquoise font-700
   }
 }
 
@@ -610,6 +643,24 @@ body::-webkit-scrollbar-thumb,
   }
   /* Team End */
   
+  /* column two wrapper Start */
+  .column_two-wrapper .content p {
+    @apply text-24 font-700 tracking-0.96;
+    line-height: normal;
+  }
+  /* column two wrapper End */
+
+  /* involved wrapper Start */
+  .involved-wrapper .card .title h2,
+  .involved-wrapper .card .title h3,
+  .involved-wrapper .card .title h4,
+  .involved-wrapper .card .title h5,
+  .involved-wrapper .card .title h6 {
+    @apply capitalize;
+  }
+  /* involved wrapper End */
+
+
 }
 
 /* Responsive CSS Start */
