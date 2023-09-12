@@ -255,8 +255,9 @@ module.exports = {
             'btn_gradient': 'linear-gradient(90deg, rgba(0,113,237,1) 0%, rgba(0,78,124,1) 100%)',
             'patterns_one': 'linear-gradient(180deg, rgba(231,244,250,1) 25%, rgba(0,78,124,1) 75%)',
             'patterns_two': 'linear-gradient(360deg, rgba(0,113,237,1) 25%, rgba(0,78,124,1) 75%)',
-            'patterns_three': 'linear-gradient(360deg, rgba(0,78,124,1) 25%, rgba(255,255,255,1) 75%)',
+            'patterns_three': 'linear-gradient(360deg, rgba(0,78,124,1) 25%, rgba(255,255,255,1) 75%)',            
             'patterns_four': 'linear-gradient(180deg, #FFF 33.85%, #E7F4FA 64.58%)',
+            'patterns_five': 'linear-gradient(180deg, rgba(0,78,124,1) 25%, rgba(255,255,255,1) 75%)',
 
             'radial': 'radial-gradient(circle, rgba(255,255,255,0) 20%, rgba(255,255,255,0.1) 100%)',
             'radial_two': 'radial-gradient(circle, rgba(255,255,255,0) 20%, rgba(255,255,255,1) 75%)',

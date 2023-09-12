@@ -18,91 +18,91 @@
             }
         }
         .pin {
-            animation: pinMove 1s linear infinite;
+            animation: pinMove 3s linear infinite;
         }
         @keyframes metter1 {
             0% {
                 fill:transparent
             }
-            50% {
+            100% {
                 fill:#E7F4FA
             }
-            100% {
+            <!-- 100% {
                 fill:transparent
-            }
+            } -->
         }
         @keyframes metter2 {
             0% {
                 fill:transparent
             }
-            50% {
+            100% {
                 fill:#E6E6E6;
             }
-            100% {
+            <!-- 100% {
                 fill:transparent
-            }
+            } -->
         }
         @keyframes metter3 {
             0% {
                 fill:transparent
             }
-            50% {
+            100% {
                 fill:#66A3FF;
             }
-            100% {
+            <!-- 100% {
                 fill:transparent
-            }
+            } -->
         }
         @keyframes metter4 {
             0% {
                 fill:transparent
             }
-            50% {
+            100% {
                 fill:#1773FF;
             }
-            100% {
+            <!-- 100% {
                 fill:transparent
-            }
+            } -->
         }
         @keyframes metter5 {
             0% {
                 fill:transparent
             }
-            50% {
+            100% {
                 fill:#0061F5;
             }
-            100% {
+            <!-- 100% {
                 fill:transparent
-            }
+            } -->
         }
         @keyframes metter6 {
             0% {
                 fill:transparent
             }
-            50% {
+            100% {
                 fill:#0071ED;
             }
-            100% {
+            <!-- 100% {
                 fill:transparent
-            }
+            } -->
         }
         .metter #m1 {
-            animation: metter1 .7s linear infinite;
+            animation: metter1 1s linear infinite;
         }
         .metter #m2 {
-            animation: metter2 .7s linear infinite;
+            animation: metter2 1.25s linear infinite;
         }
         .metter #m3 {
-            animation: metter3 .7s linear infinite;
+            animation: metter3 1.3s linear infinite;
         }
         .metter #m4{
-            animation: metter4 .7s linear infinite;
+            animation: metter4 1.35s linear infinite;
         }
         .metter #m5{
-            animation: metter5 .7s linear infinite;
+            animation: metter5 1.4s linear infinite;
         }
         .metter #m6{
-            animation: metter6 .7s linear infinite;
+            animation: metter6 1.45s linear infinite;
         }
         @keyframes wifi {
             0% {
