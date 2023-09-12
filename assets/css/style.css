@@ -634,6 +634,9 @@ body::-webkit-scrollbar-thumb,
   .telecom .breadcrumb-wrapper .img img {
     @apply lg:translate-x-[-100px] lg:translate-y-[43px] xlscreen:translate-x-[-80px] xlscreen:translate-y-[70px] lgscreen:translate-x-[0] lgscreen:translate-y-[0px] ml-0 lgscreen:mx-auto;
   }
+  .faq .breadcrumb-wrapper .img img {
+    @apply translate-y-[35px];
+  }
   /* Breadcrumb End */
 
   /* zigzag content */
@@ -840,8 +843,16 @@ body::-webkit-scrollbar-thumb,
   .accordion-list.active .card .img {
     @apply rotate-180 duration-300 delay-150 ease-linear
   }
+  .getintouch-form .input-block {
+    @apply  flex flex-col gap-2 relative m-0 p-0 w-full;
+  }
+  .getintouch-form .input-block label {
+    @apply text-Font text-16 leading-26 tracking-0.64 font-400 not-italic relative block;
+  }
+  .getintouch-form .input-block .form-control {
+    @apply font-Barlow text-16 leading-24 font-400 text-Font tracking-0.64 m-0 pt-8 pb-[12px] px-28 bg-White border-1 border-solid border-BoldBlue rounded-[8px] block w-full placeholder:opacity-40;
+  }
   /* Telecom End */
-
 }
 
 /* Responsive CSS Start */
