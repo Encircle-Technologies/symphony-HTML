@@ -105,7 +105,7 @@ $(document).ready(function ($) {
     }
 
     if ($('.testimonial-wrapper').length) {
-        var testimonialSlide = new Swiper(".testimonials-swipe", {
+        var testimonialsSlide = new Swiper(".testimonials-swipe", {
             loop: true,
             slidesPerView: 2.1,
             spaceBetween: 55,
@@ -156,6 +156,23 @@ $(document).ready(function ($) {
                 }
             });
         });
+    }
+
+    // Accordion
+    if ($(".telecom-content-with-image").length) {
+        $(".accordion-list .card").click(function() {
+		    var content = $(this).next(".content-txt");
+		    if (content.is(":visible")) {
+				$(this).parent().removeClass("active");
+				content.slideUp(300);
+			}
+			else {
+				$(this).parent().siblings().removeClass("active");
+				$(this).parent().siblings().children(".content-txt").slideUp(500);
+				content.slideDown(300);
+				$(this).parent().addClass("active");
+			}
+	  	});
     }
     
 });

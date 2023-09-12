@@ -118,18 +118,24 @@ body::-webkit-scrollbar-thumb,
   .content {
     @apply relative block w-full;
   }
+  .content-txt {
+    @apply relative w-full;
+  }
   .content p {
     @apply font-Barlow;
   }
+  .content-txt p a,
   .content p a {
     @apply no-underline ease-in duration-300 delay-150 text-BoldBlue font-700 font-Barlow;
   }
+  .content-txt p,
   .content p {
     @apply text-Font text-16 leading-26 tracking-0.64 font-400 not-italic relative block mb-20 last:mb-0;
   }
   .content.big p {
     @apply text-24 leading-[120%];
   }
+  .content-txt p a,
   .content p a {
     @apply hover:underline;
   }
@@ -262,6 +268,18 @@ body::-webkit-scrollbar-thumb,
   .title-DarkBlue h5,
   .title-DarkBlue h6 {
     @apply text-DarkBlue tracking-0.96;
+  }
+
+  .title-Fonts h1,
+  .title-Fonts h2,
+  .title-Fonts h3,
+  .title-Fonts h4,
+  .title-Fonts h5,
+  .title-Fonts h6 {
+    @apply text-Font;
+  }
+  .title-Fonts span {
+    @apply text-BoldBlue text-24 lg:text-32 leading-[120%] capitalize font-300 tracking-1.28;
   }
 
   .white p,
@@ -613,6 +631,9 @@ body::-webkit-scrollbar-thumb,
   .testimonials .breadcrumb-wrapper .img img {
     @apply ml-0 lg:translate-y-[90px];
   }
+  .telecom .breadcrumb-wrapper .img img {
+    @apply lg:translate-x-[-100px] lg:translate-y-[43px] xlscreen:translate-x-[-80px] xlscreen:translate-y-[70px] lgscreen:translate-x-[0] lgscreen:translate-y-[0px] ml-0 lgscreen:mx-auto;
+  }
   /* Breadcrumb End */
 
   /* zigzag content */
@@ -786,7 +807,40 @@ body::-webkit-scrollbar-thumb,
   .insights-wrapper .card .landscape img {
     @apply absolute inset-0;
   }
+
+  .aricle-card-wrapper .card .list-twocolumn ul {
+    @apply columns-1 md:columns-2 md:gap-x-[60px] lg:gap-x-[100px] m-0 p-0;
+  }
+  .aricle-card-wrapper .card .list-twocolumn ul li {
+    @apply m-0 mb-20 mdscreen:last:mb-0
+  }
+
+  .insight-content-with-image .landscape {
+    @apply relative overflow-hidden block w-full rounded-[8px] drop-shadow-menu pt-[47.13%] lg:pt-[77.13%]
+  }
+  .insight-content-with-image .landscape img {
+    @apply absolute top-0 left-0;
+  }
   /* insights End */
+
+  /* Telecom Start */
+  .telecom-content-with-image .portrait {
+    @apply relative overflow-hidden block w-full rounded-[40px] drop-shadow-menu pt-[100%]
+  }
+  .telecom-content-with-image .portrait img {
+    @apply absolute top-0 left-0;
+  }
+  .accordion-list .card,
+  .accordion-list .card .img {
+    @apply duration-300 delay-150 ease-linear;
+  }
+  .accordion-list.active .card {
+    @apply bg-BoldBlue
+  }
+  .accordion-list.active .card .img {
+    @apply rotate-180 duration-300 delay-150 ease-linear
+  }
+  /* Telecom End */
 
 }
 
@@ -883,11 +937,14 @@ body::-webkit-scrollbar-thumb,
   header.header .navbar-toggler.menu-opened span:nth-child(3) {
     transform: translateY(-4px) rotate(-45deg);
   }
-  header.header .navbar ul li.current-menu-item a {
-    @apply text-opacity-50;
+  header.header .navbar ul > li.current-menu-item > a {
+    @apply text-BoldBlue
+  }
+  header.header .navbar ul > ul > li.current-menu-item a {
+    @apply text-BrightTurquoise;
   }
   .tel a {
-    @apply text-16 font-900 text-BoldBlue duration-300 delay-150 ease-linear hover:text-DarkBlue;
+    @apply text-16 font-900 text-BoldBlue duration-300 delay-150 ease-linear hover:text-BrightTurquoise;
   }
   .tel svg {
     @apply mt-[4px]
