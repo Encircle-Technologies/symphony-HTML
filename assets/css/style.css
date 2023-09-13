@@ -29,6 +29,9 @@ body::-webkit-scrollbar-thumb,
   body.menu-open {
     @apply overflow-hidden;
   }
+  body .wpcf7-spinner {
+    @apply !hidden;
+  }
   .container-fluid {
     @apply px-100 xlscreen:px-50 mdscreen2:px-20 mdscreen:px-20 w-full;  
   }
@@ -146,33 +149,42 @@ body::-webkit-scrollbar-thumb,
     @apply text-center;
   }
 
+  .content-txt ul li,
   .content ul li {
     @apply relative pl-25;
   }
-  .content.white ul li {
+  .content.white ul li,
+  .content-txt.white ul li {
     @apply text-White;
   }
-  .content ul li:before {
+  .content ul li:before,
+  .content-txt ul li:before {
     content: "";
     @apply absolute top-[10px] left-0 w-[6px] h-[6px] bg-BoldBlue rounded-25;
   }
-  .content.white ul li:before {
+  .content.white ul li:before,
+  .content-txt.white ul li:before {
     content: "";
     @apply absolute top-[10px] left-0 w-[6px] h-[6px] bg-BrightTurquoise rounded-25;
   }
 
+  .content-txt ol li,
   .content ol li {
     @apply relative m-0 mb-20 last:mb-0 p-0 list-decimal list-inside;
   }
+  .content-txt ol li p,
   .content ol li p {
     @apply pl-10 !inline-block w-full max-w-[calc(100%_-_25px)] align-top -mt-3
   }
+  .content-txt.white ol li p,
   .content.white ol li p {
     @apply text-White
   }
+  .content-txt ol li::marker,
   .content ol li::marker {
     @apply text-BoldBlue font-700 inline-block;
   }
+  .content-txt.white ol li::marker,
   .content.white ol li::marker {
     @apply text-BrightTurquoise font-700
   }
@@ -309,10 +321,6 @@ body::-webkit-scrollbar-thumb,
   }
   .swiper-pagination .swiper-pagination-bullet-active {
     @apply bg-transparent;
-  }
-
-  .wpcf7-spinner {
-    @apply !hidden;
   }
 
   .bg-pattern_one {
@@ -637,6 +645,12 @@ body::-webkit-scrollbar-thumb,
   .faq .breadcrumb-wrapper .img img {
     @apply translate-y-[35px];
   }
+  .contact .breadcrumb-wrapper .img img {
+    @apply lg:translate-x-[-100px] lg:translate-y-[35px] xlscreen:translate-x-[-80px] xlscreen:translate-y-[83px] lgscreen:translate-x-[0] lgscreen:translate-y-[0px] ml-0 lgscreen:mx-auto;
+  }
+  .tower .breadcrumb-wrapper .img img {
+    @apply lg:translate-x-[-184px] lg:translate-y-[103px] xlscreen:translate-x-[-104px] xlscreen:translate-y-[90px] lgscreen:translate-x-[0] lgscreen:translate-y-[0px] ml-0 lgscreen:mx-auto w-full max-w-[613px];
+  }
   /* Breadcrumb End */
 
   /* zigzag content */
@@ -853,11 +867,16 @@ body::-webkit-scrollbar-thumb,
     @apply font-Barlow text-16 leading-24 font-400 text-Font tracking-0.64 m-0 pt-8 pb-[12px] px-28 bg-White border-1 border-solid border-BoldBlue rounded-[8px] block w-full placeholder:opacity-40;
   }
   /* Telecom End */
+
+
   .privacy-wrapper .content ol {
     counter-reset: item;
   }
   .privacy-wrapper .content ol li {
     list-style-type: decimal;
+  }
+  .privacy-wrapper .content ol li::marker {
+    @apply hidden opacity-0;
   }
   .privacy-wrapper .content ol li:before { 
     content: counters(item,".") ""; 
@@ -873,6 +892,24 @@ body::-webkit-scrollbar-thumb,
   .privacy-wrapper .list-twocolumn .content ul {
     @apply columns-1 md:columns-2 md:gap-10 xl:gap-20;
   }
+
+  /* contact Start */
+  .contact-form {
+    @apply hidden
+  }
+  .contact-form form {
+    @apply flex flex-col justify-center items-center gap-7 !h-full !w-full;
+  }
+  .contact-form .input-block {
+    @apply block relative m-0 p-0 w-full;
+  }
+  .contact-form .input-block .form-control {
+    @apply font-Barlow text-16 leading-24 font-400 text-Font tracking-0.64 m-0 pt-8 pb-[12px] px-28 bg-White border-1 border-solid border-BoldBlue rounded-10 block w-full placeholder:opacity-40;
+  }
+  .contact-form .input-block select.form-control {
+    @apply bg-[url(./../../images/select-arrow.svg)] bg-no-repeat bg-[right_28px_top_1.05rem] bg-[length:15px] appearance-none;
+  }
+  /* contact End */
 }
 
 /* Responsive CSS Start */

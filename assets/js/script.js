@@ -174,6 +174,13 @@ $(document).ready(function ($) {
 			}
 	  	});
     }
+
+    // toggle
+    if ($(".contact-content").length) {
+        $('.contact-content .btn').click(function() {
+            $('.contact-form').toggle('slow');
+        });
+    }
     
 });
 
