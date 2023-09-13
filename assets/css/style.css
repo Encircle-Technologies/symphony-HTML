@@ -910,6 +910,30 @@ body::-webkit-scrollbar-thumb,
     @apply bg-[url(./../../images/select-arrow.svg)] bg-no-repeat bg-[right_28px_top_1.05rem] bg-[length:15px] appearance-none;
   }
   /* contact End */
+
+  /* sitemap Start */
+  .sitemap-list ul {
+    @apply flex flex-col items-center justify-center w-full m-0 p-0 gap-5;
+  }
+  .sitemap-list ul li {
+    @apply w-full m-0 p-0;
+  }
+  .sitemap-list ul li a {
+    @apply block text-16 leading-26 text-BoldBlue font-700 tracking-0.64 bg-transparent border-1 border-solid border-BoldBlue rounded-10 m-0 pt-[17px] pb-[21px] px-28 w-full duration-300 delay-150 ease-linear;
+  }
+  .sitemap-list ul li a:hover {
+    @apply bg-BoldBlue text-White;
+  }
+  .sitemap-list ul li ul {
+    @apply pl-28 border-0 border-l-1 border-solid border-DarkBlue;
+  }
+  .sitemap-list ul li ul li a {
+    @apply block text-16 leading-26 text-DarkBlue font-700 tracking-0.64 bg-transparent border-1 border-solid border-DarkBlue rounded-10 m-0 pt-[17px] pb-[21px] px-28 w-full duration-300 delay-150 ease-linear;
+  }
+  .sitemap-list ul li ul li a:hover {
+    @apply bg-DarkBlue text-White;
+  }
+  /* sitemap End */
 }
 
 /* Responsive CSS Start */

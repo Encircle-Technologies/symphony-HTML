@@ -35,6 +35,7 @@ module.exports = {
             inherit: 'inherit',   
             none: 'none',
             '2': '2 2 0%',
+            'max-auto': '0 0 auto',
         },
         container: {
             center: true,
