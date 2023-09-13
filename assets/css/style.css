@@ -162,7 +162,7 @@ body::-webkit-scrollbar-thumb,
   }
 
   .content ol li {
-    @apply relative m-0 p-0 list-decimal list-inside;
+    @apply relative m-0 mb-20 last:mb-0 p-0 list-decimal list-inside;
   }
   .content ol li p {
     @apply pl-10 !inline-block w-full max-w-[calc(100%_-_25px)] align-top -mt-3
@@ -853,6 +853,26 @@ body::-webkit-scrollbar-thumb,
     @apply font-Barlow text-16 leading-24 font-400 text-Font tracking-0.64 m-0 pt-8 pb-[12px] px-28 bg-White border-1 border-solid border-BoldBlue rounded-[8px] block w-full placeholder:opacity-40;
   }
   /* Telecom End */
+  .privacy-wrapper .content ol {
+    counter-reset: item;
+  }
+  .privacy-wrapper .content ol li {
+    list-style-type: decimal;
+  }
+  .privacy-wrapper .content ol li:before { 
+    content: counters(item,".") ""; 
+    counter-increment: item;
+    @apply text-BoldBlue font-Barlow font-700 inline-block;
+  }
+  .privacy-wrapper .content ol li span {
+    @apply ml-10;
+  }
+  .privacy-wrapper .content ul li {
+    @apply mb-20 last:mb-0
+  }
+  .privacy-wrapper .list-twocolumn .content ul {
+    @apply columns-1 md:columns-2 md:gap-10 xl:gap-20;
+  }
 }
 
 /* Responsive CSS Start */
